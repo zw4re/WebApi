@@ -1,0 +1,6 @@
+@KapParser.API_HostAddress = http://localhost:5124
+
+GET {{KapParser.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

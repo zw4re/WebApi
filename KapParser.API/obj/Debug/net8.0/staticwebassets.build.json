@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "0SRPs5UTA8jaxHA+bQXwO6Y4SPOe0fraSSuIBKtndRU=",
+  "Source": "KapParser.API",
+  "BasePath": "_content/KapParser.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
