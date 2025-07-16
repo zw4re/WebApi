@@ -1,10 +1,10 @@
-using DatabaseService;
 using Microsoft.EntityFrameworkCore;
 using Hangfire;
 using KapParser.API.Helpers;
 using Hangfire.Redis.StackExchange;
 using Worker.Jobs;
-
+using KapParser.API.Services;
+using DatabaseService.Context;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +18,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
         ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection"))
     )
 );
+
 
 // Hangfire servislerini ekle
 builder.Services.AddHangfire(config => config.UseRedisStorage("localhost"));

@@ -1,6 +1,19 @@
 [
   {
     "Name": "New Profile",
-    "Projects": []
+    "Projects": [
+      {
+        "Path": "DatabaseService\\DatabaseService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "KapParser.API\\KapParser.API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Worker\\Worker.csproj",
+        "Action": "Start"
+      }
+    ]
   }
 ]

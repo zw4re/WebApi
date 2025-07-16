@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using DatabaseService;
-using Models;
 using Microsoft.EntityFrameworkCore;
+using DatabaseService.Context;
+using Models.Entities;
 
-namespace KapParser.API.Controllers
+namespace DatabaseService.Controllers
 {
     [Route("[controller]")]
     [ApiController]

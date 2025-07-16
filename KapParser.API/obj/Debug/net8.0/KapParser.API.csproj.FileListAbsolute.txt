@@ -78,3 +78,9 @@ C:\Users\Eren\Desktop\KapParser\KapParser\KapParserSolution\KapParser.API\obj\De
 C:\Users\Eren\Desktop\KapParser\KapParser\KapParserSolution\KapParser.API\obj\Debug\net8.0\KapParser.API.pdb
 C:\Users\Eren\Desktop\KapParser\KapParser\KapParserSolution\KapParser.API\obj\Debug\net8.0\KapParser.API.genruntimeconfig.cache
 C:\Users\Eren\Desktop\KapParser\KapParser\KapParserSolution\KapParser.API\obj\Debug\net8.0\ref\KapParser.API.dll
+C:\Users\Eren\Desktop\KapParser\KapParser\KapParserSolution\KapParser.API\bin\Debug\net8.0\DatabaseService.deps.json
+C:\Users\Eren\Desktop\KapParser\KapParser\KapParserSolution\KapParser.API\bin\Debug\net8.0\DatabaseService.runtimeconfig.json
+C:\Users\Eren\Desktop\KapParser\KapParser\KapParserSolution\KapParser.API\bin\Debug\net8.0\DatabaseService.staticwebassets.endpoints.json
+C:\Users\Eren\Desktop\KapParser\KapParser\KapParserSolution\KapParser.API\bin\Debug\net8.0\DatabaseService.exe
+C:\Users\Eren\Desktop\KapParser\KapParser\KapParserSolution\KapParser.API\bin\Debug\net8.0\Worker.staticwebassets.endpoints.json
+C:\Users\Eren\Desktop\KapParser\KapParser\KapParserSolution\KapParser.API\obj\Debug\net8.0\KapParser.API.sourcelink.json

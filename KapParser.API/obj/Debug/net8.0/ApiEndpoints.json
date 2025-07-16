@@ -1,6 +1,32 @@
 [
   {
-    "ContainingType": "KapParser.API.Controllers.CompaniesController",
+    "ContainingType": "KapParser.API.Controllers.TestCompaniesController",
+    "Method": "GetAll",
+    "RelativePath": "api/TestCompanies",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KapParser.API.Controllers.TestCompaniesController",
+    "Method": "GetById",
+    "RelativePath": "api/TestCompanies/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DatabaseService.Controllers.CompaniesController",
     "Method": "GetAll",
     "RelativePath": "Companies",
     "HttpMethod": "GET",
@@ -10,7 +36,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "KapParser.API.Controllers.CompaniesController",
+    "ContainingType": "DatabaseService.Controllers.CompaniesController",
     "Method": "Create",
     "RelativePath": "Companies",
     "HttpMethod": "POST",
@@ -19,14 +45,14 @@
     "Parameters": [
       {
         "Name": "company",
-        "Type": "Models.Company",
+        "Type": "Models.Entities.Company",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "KapParser.API.Controllers.CompaniesController",
+    "ContainingType": "DatabaseService.Controllers.CompaniesController",
     "Method": "GetById",
     "RelativePath": "Companies/{id}",
     "HttpMethod": "GET",
@@ -42,7 +68,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "KapParser.API.Controllers.CompaniesController",
+    "ContainingType": "DatabaseService.Controllers.CompaniesController",
     "Method": "Update",
     "RelativePath": "Companies/{id}",
     "HttpMethod": "PUT",
@@ -56,14 +82,14 @@
       },
       {
         "Name": "updated",
-        "Type": "Models.Company",
+        "Type": "Models.Entities.Company",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "KapParser.API.Controllers.CompaniesController",
+    "ContainingType": "DatabaseService.Controllers.CompaniesController",
     "Method": "Delete",
     "RelativePath": "Companies/{id}",
     "HttpMethod": "DELETE",

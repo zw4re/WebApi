@@ -1,11 +1,13 @@
 ﻿using System.Net.Http;
 using System.Threading.Tasks;
 using HtmlAgilityPack;
-using DatabaseService;
 using Models;
 using System.Text.Json;
 using System.Text.RegularExpressions;
 using System.Linq;
+using DatabaseService.Context;
+using Models.Dtos;
+using Models.Entities;
 
 
 namespace Worker.Services

@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Models;
 using Microsoft.EntityFrameworkCore;
+using Models.Entities;
 
-namespace DatabaseService
+namespace DatabaseService.Context
 {
     public class AppDbContext : DbContext
     {

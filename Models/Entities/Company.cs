@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using Models;
+using Models.Entities;
 
-namespace Models
+namespace Models.Entities
 {
     [Table("companies")]
     public class Company
