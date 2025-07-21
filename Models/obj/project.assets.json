@@ -1035,9 +1035,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\Models\\Models.csproj",
+      "projectUniqueName": "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\Models\\Entites.csproj",
       "projectName": "Models",
-      "projectPath": "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\Models\\Models.csproj",
+      "projectPath": "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\Models\\Entites.csproj",
       "packagesPath": "C:\\Users\\Eren\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\Models\\obj\\",
       "projectStyle": "PackageReference",

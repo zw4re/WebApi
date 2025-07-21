@@ -5,7 +5,7 @@
     "version": "v1"
   },
   "paths": {
-    "/Companies": {
+    "/api/companies": {
       "get": {
         "tags": [
           "Companies"
@@ -46,7 +46,7 @@
         }
       }
     },
-    "/Companies/{id}": {
+    "/api/companies/{id}": {
       "get": {
         "tags": [
           "Companies"
@@ -126,6 +126,25 @@
         "responses": {
           "200": {
             "description": "OK"
+          }
+        }
+      }
+    },
+    "/": {
+      "get": {
+        "tags": [
+          "DatabaseService"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
           }
         }
       }

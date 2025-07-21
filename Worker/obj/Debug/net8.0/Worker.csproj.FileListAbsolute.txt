@@ -64,7 +64,6 @@ C:\Users\Eren\Desktop\KapParser\KapParser\KapParserSolution\Worker\bin\Debug\net
 C:\Users\Eren\Desktop\KapParser\KapParser\KapParserSolution\Worker\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Eren\Desktop\KapParser\KapParser\KapParserSolution\Worker\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Eren\Desktop\KapParser\KapParser\KapParserSolution\Worker\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\Eren\Desktop\KapParser\KapParser\KapParserSolution\Worker\obj\Debug\net8.0\Worker.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Eren\Desktop\KapParser\KapParser\KapParserSolution\Worker\obj\Debug\net8.0\Worker.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Eren\Desktop\KapParser\KapParser\KapParserSolution\Worker\obj\Debug\net8.0\Worker.sourcelink.json
 C:\Users\Eren\Desktop\KapParser\KapParser\KapParserSolution\Worker\obj\Debug\net8.0\scopedcss\bundle\Worker.styles.css
@@ -78,3 +77,4 @@ C:\Users\Eren\Desktop\KapParser\KapParser\KapParserSolution\Worker\obj\Debug\net
 C:\Users\Eren\Desktop\KapParser\KapParser\KapParserSolution\Worker\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Worker.props
 C:\Users\Eren\Desktop\KapParser\KapParser\KapParserSolution\Worker\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\Eren\Desktop\KapParser\KapParser\KapParserSolution\Worker\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Eren\Desktop\KapParser\KapParser\KapParserSolution\Worker\obj\Debug\net8.0\Worker.MvcApplicationPartsAssemblyInfo.cs

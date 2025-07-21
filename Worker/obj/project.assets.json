@@ -1630,8 +1630,8 @@
     },
     "Models/1.0.0": {
       "type": "project",
-      "path": "../Models/Models.csproj",
-      "msbuildProject": "../Models/Models.csproj"
+      "path": "../Models/Entites.csproj",
+      "msbuildProject": "../Models/Entites.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1684,8 +1684,8 @@
             "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\DatabaseService\\DatabaseService.csproj": {
               "projectPath": "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\DatabaseService\\DatabaseService.csproj"
             },
-            "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\Models\\Models.csproj": {
-              "projectPath": "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\Models\\Models.csproj"
+            "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\Models\\Entites.csproj": {
+              "projectPath": "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\Models\\Entites.csproj"
             }
           }
         }

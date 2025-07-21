@@ -14,7 +14,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 // Controller'ları ekle
 builder.Services.AddControllers();
 
-// Swagger (isteğe bağlı)
+// Swagger 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -23,7 +23,7 @@ builder.Services.AddSwaggerGen(c =>
 
 var app = builder.Build();
 
-// Swagger UI (isteğe bağlı)
+// Swagger UI 
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -33,5 +33,7 @@ if (app.Environment.IsDevelopment())
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.MapGet("/", () => "Welcome to DatabaseService!");
 
 app.Run();

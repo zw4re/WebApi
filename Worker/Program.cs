@@ -1,4 +1,4 @@
-﻿using Models;
+﻿using Entities;
 using Worker.Services;
 using Worker.Jobs;
 using Worker;
@@ -19,12 +19,12 @@ var builder = Host.CreateDefaultBuilder(args)
     {
         var configuration = context.Configuration;
 
-        // Veritabanı bağlantısı
-        services.AddDbContext<AppDbContext>(options =>
-            options.UseMySql(
-                configuration.GetConnectionString("DefaultConnection"),
-                ServerVersion.AutoDetect(configuration.GetConnectionString("DefaultConnection"))
-            ));
+        //// Veritabanı bağlantısı
+        //services.AddDbContext<AppDbContext>(options =>
+        //    options.UseMySql(
+        //        configuration.GetConnectionString("DefaultConnection"),
+        //        ServerVersion.AutoDetect(configuration.GetConnectionString("DefaultConnection"))
+        //    ));
 
         // Hangfire Redis konfigürasyonu
         services.AddHangfire(config =>
@@ -38,7 +38,7 @@ var builder = Host.CreateDefaultBuilder(args)
         services.AddScoped<KapJob>();
 
         // Hosted service (Background Worker)
-        services.AddHostedService<KapWorker>();
+        services.AddHostedService<Workers>();
     });
 
 await builder.Build().RunAsync();

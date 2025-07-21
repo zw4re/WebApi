@@ -1,8 +1,26 @@
 [
   {
+    "ContainingType": "Program\u002B\u003C\u003Ec",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_2",
+    "RelativePath": "",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "DatabaseService.Controllers.CompaniesController",
     "Method": "GetAll",
-    "RelativePath": "Companies",
+    "RelativePath": "api/companies",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -12,14 +30,14 @@
   {
     "ContainingType": "DatabaseService.Controllers.CompaniesController",
     "Method": "Create",
-    "RelativePath": "Companies",
+    "RelativePath": "api/companies",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "company",
-        "Type": "Models.Entities.Company",
+        "Type": "Entities.DbModels.Company",
         "IsRequired": true
       }
     ],
@@ -28,7 +46,7 @@
   {
     "ContainingType": "DatabaseService.Controllers.CompaniesController",
     "Method": "GetById",
-    "RelativePath": "Companies/{id}",
+    "RelativePath": "api/companies/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -44,7 +62,7 @@
   {
     "ContainingType": "DatabaseService.Controllers.CompaniesController",
     "Method": "Update",
-    "RelativePath": "Companies/{id}",
+    "RelativePath": "api/companies/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -56,7 +74,7 @@
       },
       {
         "Name": "updated",
-        "Type": "Models.Entities.Company",
+        "Type": "Entities.DbModels.Company",
         "IsRequired": true
       }
     ],
@@ -65,7 +83,7 @@
   {
     "ContainingType": "DatabaseService.Controllers.CompaniesController",
     "Method": "Delete",
-    "RelativePath": "Companies/{id}",
+    "RelativePath": "api/companies/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,

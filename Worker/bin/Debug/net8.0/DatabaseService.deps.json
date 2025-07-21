@@ -12,7 +12,8 @@
           "Microsoft.EntityFrameworkCore": "8.0.13",
           "Models": "1.0.0",
           "Pomelo.EntityFrameworkCore.MySql": "8.0.3",
-          "Swashbuckle.AspNetCore": "9.0.3"
+          "Swashbuckle.AspNetCore": "9.0.3",
+          "Models.Reference": "1.0.0.0"
         },
         "runtime": {
           "DatabaseService.dll": {}
@@ -440,6 +441,13 @@
         },
         "runtime": {
           "Models.dll": {
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Models.Reference/1.0.0.0": {
+        "runtime": {
+          "Models.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -742,6 +750,11 @@
     },
     "Models/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Models.Reference/1.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

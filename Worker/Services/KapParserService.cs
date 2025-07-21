@@ -1,29 +1,28 @@
 ﻿using System.Net.Http;
+using System.Net.Http.Json;
 using System.Threading.Tasks;
 using HtmlAgilityPack;
-using Models;
+using Entities;
 using System.Text.Json;
 using System.Text.RegularExpressions;
 using System.Linq;
-using DatabaseService.Context;
-using Models.Dtos;
-using Models.Entities;
-
+using Microsoft.Extensions.Configuration;
+using Entities.Presentation;
 
 namespace Worker.Services
 {
     public class KapParseService
     {
         private readonly HttpClient _httpClient;
-        private readonly AppDbContext _db;
+        private readonly string _dbServiceUrl;
 
-        public KapParseService(HttpClient httpClient, AppDbContext db)
+        public KapParseService(HttpClient httpClient, IConfiguration config)
         {
             _httpClient = httpClient;
-            _db = db;
+            _dbServiceUrl = config["URL:DatabaseService"];
         }
 
-        public async Task FetchAndSaveCompaniesAsync()
+        public async Task FetchAndSendCompaniesAsync()
         {
             var url = "https://www.kap.org.tr/tr/bist-sirketler";
             var html = await _httpClient.GetStringAsync(url);
@@ -34,16 +33,13 @@ namespace Worker.Services
             var scripts = doc.DocumentNode.SelectNodes("//script");
             string jsonString = null;
 
-            // İlgili veriyi barındıran script içeriğini bul
             foreach (var script in scripts)
             {
                 var content = script.InnerText;
 
                 if (content.Contains("kapMemberTitle") && content.Contains("relatedMemberTitle"))
                 {
-                    // JSON array kısmını regex ile al
                     var match = Regex.Match(content, @"\[\{.*?\}\]");
-
                     if (match.Success)
                     {
                         jsonString = match.Value;
@@ -63,11 +59,9 @@ namespace Worker.Services
 
             try
             {
-                // Escape edilmiş karakterleri düzeltmek için Replace kullanıyoruz
-                jsonString = jsonString.Replace("\\\"", "\""); // Escape karakterlerini düzeltme
+                jsonString = jsonString.Replace("\\\"", "\"");
                 jsonString = jsonString + "}]";
 
-                // JSON'u düzgün şekilde deserialize ediyoruz
                 var wrapperList = JsonSerializer.Deserialize<List<CompanyWrapperJsonModel>>(jsonString);
 
                 if (wrapperList == null || wrapperList.Count == 0)
@@ -76,54 +70,44 @@ namespace Worker.Services
                     return;
                 }
 
-                // JSON'u düzgün formatta (Pretty-print) alt alta yazdırma
                 var formattedJson = JsonSerializer.Serialize(wrapperList, new JsonSerializerOptions { WriteIndented = true });
-                Console.WriteLine("Formatted JSON (Alt Alta Yazılmış):");
+                Console.WriteLine("Formatted JSON:");
                 Console.WriteLine(formattedJson);
 
-                // İçerideki şirketleri alıyoruz ve veritabanına ekliyoruz
                 foreach (var wrapper in wrapperList)
                 {
                     foreach (var parsed in wrapper.content)
                     {
-                        bool hasNullValue = false;
-                        foreach (var property in parsed.GetType().GetProperties())
-                        {
-                            var value = property.GetValue(parsed);
-                            // Eğer herhangi bir özellik null ise, döngüyü kır
-                            if (value == null)
-                            {
-                                hasNullValue = true;
-                                break;
-                            }
-                        }
+                        bool hasNullValue = parsed.GetType().GetProperties().Any(prop => prop.GetValue(parsed) == null);
                         if (hasNullValue)
+                            continue;
+
+                        var company = new
                         {
-                            break;
-                        }
-                        var company = new Company
-                        {
-                            MkkMemberOid = parsed.mkkMemberOid,
-                            KapMemberTitle = parsed.kapMemberTitle,
-                            RelatedMemberTitle = parsed.relatedMemberTitle,
-                            StockCode = parsed.stockCode,
-                            CityName = parsed.cityName,
-                            RelatedMemberOid = parsed.relatedMemberOid,
-                            KapMemberType = parsed.kapMemberType
+                            mkkMemberOid = parsed.mkkMemberOid,
+                            kapMemberTitle = parsed.kapMemberTitle,
+                            relatedMemberTitle = parsed.relatedMemberTitle,
+                            stockCode = parsed.stockCode,
+                            cityName = parsed.cityName,
+                            relatedMemberOid = parsed.relatedMemberOid,
+                            kapMemberType = parsed.kapMemberType
                         };
 
-                        _db.Companies.Add(company);
+                        // Company nesnesini HTTP POST ile DatabaseService'e gönder
+                        var response = await _httpClient.PostAsJsonAsync($"{_dbServiceUrl}/api/companies", company);
+
+                        if (!response.IsSuccessStatusCode)
+                        {
+                            Console.WriteLine($"Gönderim başarısız: {response.StatusCode}");
+                        }
                     }
                 }
 
-
-                // Verileri veritabanına kaydet
-                await _db.SaveChangesAsync();
-                Console.WriteLine("Veriler başarıyla kaydedildi.");
+                Console.WriteLine("Veriler başarıyla gönderildi.");
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"JSON ayrıştırma hatası: {ex}");
+                Console.WriteLine($"Hata: {ex.Message}");
             }
         }
     }
