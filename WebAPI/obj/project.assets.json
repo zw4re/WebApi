@@ -617,7 +617,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "Hangfire.MemoryStorage": "1.8.1.2",
           "Microsoft.EntityFrameworkCore": "8.0.13",
           "Models": "1.0.0",
           "Pomelo.EntityFrameworkCore.MySql": "8.0.3",
@@ -1657,8 +1656,8 @@
     },
     "Models/1.0.0": {
       "type": "project",
-      "path": "../Models/Entites.csproj",
-      "msbuildProject": "../Models/Entites.csproj"
+      "path": "../Models/Entities.csproj",
+      "msbuildProject": "../Models/Entities.csproj"
     },
     "Worker/1.0.0": {
       "type": "project",
@@ -1714,8 +1713,8 @@
             "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\DatabaseService\\DatabaseService.csproj": {
               "projectPath": "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\DatabaseService\\DatabaseService.csproj"
             },
-            "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\Models\\Entites.csproj": {
-              "projectPath": "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\Models\\Entites.csproj"
+            "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\Models\\Entities.csproj": {
+              "projectPath": "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\Models\\Entities.csproj"
             },
             "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\Worker\\Worker.csproj": {
               "projectPath": "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\Worker\\Worker.csproj"

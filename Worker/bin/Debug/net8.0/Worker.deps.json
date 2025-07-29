@@ -387,7 +387,6 @@
       "System.IO.Pipelines/5.0.1": {},
       "DatabaseService/1.0.0": {
         "dependencies": {
-          "Hangfire.MemoryStorage": "1.8.1.2",
           "Microsoft.EntityFrameworkCore": "8.0.13",
           "Models": "1.0.0",
           "Pomelo.EntityFrameworkCore.MySql": "8.0.3",

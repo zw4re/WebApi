@@ -6,6 +6,7 @@ namespace Worker.Jobs
 {
     public class KapJob
     {
+        // kapparservice sınıfı bağımlılık olarak alındı 
         private readonly KapParseService _kapParseService;
 
         public KapJob(KapParseService kapParseService)
@@ -16,8 +17,18 @@ namespace Worker.Jobs
         public async Task Run()
         {
             Console.WriteLine("KAP verileri çekiliyor...");
-            await _kapParseService.FetchAndSendCompaniesAsync(); // ✅ Doğru metot adı
-            Console.WriteLine("İşlem tamamlandı.");
+            try
+            {
+                await _kapParseService.FetchAndSendCompaniesAsync();
+                Console.WriteLine("KAP veri işlemi tamamlandı.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"KAP job sırasında hata oluştu: {ex.Message}");
+                throw; // Hangfire'ın job'ı başarısız olarak işaretlemesi için
+            }
+            //await _kapParseService.FetchAndSendCompaniesAsync(); 
+            //Console.WriteLine("İşlem tamamlandı.");
         }
     }
 }

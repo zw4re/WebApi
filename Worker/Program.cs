@@ -7,38 +7,51 @@ using Hangfire.Redis.StackExchange;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
-using Microsoft.EntityFrameworkCore;
-using DatabaseService.Context;
 
-var builder = Host.CreateDefaultBuilder(args)
-    .ConfigureAppConfiguration((context, config) =>
-    {
-        config.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
-    })
-    .ConfigureServices((context, services) =>
-    {
-        var configuration = context.Configuration;
+var builder = WebApplication.CreateBuilder(args);
 
-        //// Veritabanı bağlantısı
-        //services.AddDbContext<AppDbContext>(options =>
-        //    options.UseMySql(
-        //        configuration.GetConnectionString("DefaultConnection"),
-        //        ServerVersion.AutoDetect(configuration.GetConnectionString("DefaultConnection"))
-        //    ));
+// Uygulama ayarları
+builder.Configuration.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
 
-        // Hangfire Redis konfigürasyonu
-        services.AddHangfire(config =>
-            config.UseRedisStorage("localhost:6379")); // Bağlantı adresin farklıysa değiştir
 
-        services.AddHangfireServer();
+builder.Services.AddControllers(); // Web desteği için
 
-        // Servisler
-        services.AddHttpClient();
-        services.AddScoped<KapParseService>();
-        services.AddScoped<KapJob>();
+// Hangfire Redis konfigürasyonu
+builder.Services.AddHangfire(config =>
+    config.UseRedisStorage("localhost:6379")); // BURASIII BAKK BURAYA
+builder.Services.AddHangfireServer();
 
-        // Hosted service (Background Worker)
-        services.AddHostedService<Workers>();
-    });
+// Servisler
+builder.Services.AddHttpClient(); // DatabaseService'e Http üzerinden istek atmak için
+//builder.Services.AddScoped<KapParseService>();
+//builder.Services.AddScoped<KapJob>();
+//builder.Services.AddScoped<TcmbService>();
+//builder.Services.AddScoped<TcmbJob>();
+builder.Services.AddSingleton<RecurringJobs>();
+// Hosted service (Worker arkada çalışacak)
+builder.Services.AddHostedService<Workers>();
 
-await builder.Build().RunAsync();
+
+// Build et ve app nesnesini oluştur
+var app = builder.Build();
+
+// Routing
+app.UseRouting();
+app.UseAuthorization();
+
+// Hangfire Dashboard aktif
+app.UseHangfireDashboard("/hangfire");
+
+// Controller endpoint'leri
+app.MapControllers();
+app.MapGet("/", () => "Worker API + Hangfire Dashboard aktif!");
+
+
+// IConfiguration'ı bağımlılıktan alma
+var recurringJobs = app.Services.GetRequiredService<RecurringJobs>();
+
+// RecurringJobs örneği oluşturup ve jobları register etmek
+recurringJobs.AddOrUpdate(); 
+
+// Uygulama çalıştır
+app.Run();

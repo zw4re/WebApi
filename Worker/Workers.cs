@@ -1,36 +1,29 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Hangfire;
-using Worker.Jobs;
-using Microsoft.Extensions.Hosting;
 using System.Threading;
 using System.Threading.Tasks;
-
+using Hangfire;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Worker.Jobs;
 
 namespace Worker
 {
     public class Workers : BackgroundService
     {
-        private readonly KapJob _job;
-
-        public Workers(KapJob job)
+        private readonly IServiceProvider _serviceProvider;
+        //bağımlılığa erişmek için kullandım
+        public Workers(IServiceProvider serviceProvider)
         {
-            _job = job;
+            _serviceProvider = serviceProvider;
         }
 
         protected override Task ExecuteAsync(CancellationToken stoppingToken)
         {
-            Console.WriteLine("Worker başlatıldı");
-            // Job her dakika çalışacak şekilde zamanlanıyor
-            RecurringJob.AddOrUpdate<KapJob>(
-                "fetch-kap",
-                job => job.Run(),
-                Cron.Minutely);
-
+            Console.WriteLine("Worker başlatıldı (Job'lar Hangfire tarafından yönetiliyor)");
             return Task.CompletedTask;
         }
     }
 }
+
+
+

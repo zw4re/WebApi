@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Fk/rUIdIVQE=",
+  "dgSpecHash": "wGLKPcXu+Jw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\Models\\Entites.csproj",
+  "projectFilePath": "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\Models\\Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Eren\\.nuget\\packages\\hangfire\\1.7.36\\hangfire.1.7.36.nupkg.sha512",
     "C:\\Users\\Eren\\.nuget\\packages\\hangfire.aspnetcore\\1.7.36\\hangfire.aspnetcore.1.7.36.nupkg.sha512",

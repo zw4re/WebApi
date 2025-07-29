@@ -14,7 +14,10 @@ namespace Worker.Services
     public class KapParseService
     {
         private readonly HttpClient _httpClient;
+
+        // veriyi gönderdiğim API adresi
         private readonly string _dbServiceUrl;
+       
 
         public KapParseService(HttpClient httpClient, IConfiguration config)
         {
@@ -84,13 +87,13 @@ namespace Worker.Services
 
                         var company = new
                         {
-                            mkkMemberOid = parsed.mkkMemberOid,
-                            kapMemberTitle = parsed.kapMemberTitle,
-                            relatedMemberTitle = parsed.relatedMemberTitle,
-                            stockCode = parsed.stockCode,
-                            cityName = parsed.cityName,
-                            relatedMemberOid = parsed.relatedMemberOid,
-                            kapMemberType = parsed.kapMemberType
+                            MkkMemberOid = parsed.mkkMemberOid,
+                            KapMemberTitle = parsed.kapMemberTitle,
+                            RelatedMemberTitle = parsed.relatedMemberTitle,
+                            StockCode = parsed.stockCode,
+                            CityName = parsed.cityName,
+                            RelatedMemberOid = parsed.relatedMemberOid,
+                            KapMemberType = parsed.kapMemberType
                         };
 
                         // Company nesnesini HTTP POST ile DatabaseService'e gönder

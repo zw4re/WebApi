@@ -182,5 +182,119 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DatabaseService.Controllers.TcmbController",
+    "Method": "PostRates",
+    "RelativePath": "api/Tcmb",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "rates",
+        "Type": "System.Collections.Generic.List\u00601[[Entities.DbModels.TcmbExchangeRate, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DatabaseService.Controllers.TcmbController",
+    "Method": "GetAll",
+    "RelativePath": "api/Tcmb",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Entities.DbModels.TcmbExchangeRate, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DatabaseService.Controllers.TcmbController",
+    "Method": "Update",
+    "RelativePath": "api/Tcmb",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updated",
+        "Type": "Entities.DbModels.TcmbExchangeRate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DatabaseService.Controllers.TcmbController",
+    "Method": "GetOne",
+    "RelativePath": "api/Tcmb/{date}/{currencyCode}/{type}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "date",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "currencyCode",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "type",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Entities.DbModels.TcmbExchangeRate",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DatabaseService.Controllers.TcmbController",
+    "Method": "Delete",
+    "RelativePath": "api/Tcmb/{date}/{currencyCode}/{type}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "date",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "currencyCode",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "type",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

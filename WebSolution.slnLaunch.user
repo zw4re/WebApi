@@ -7,10 +7,6 @@
         "Action": "Start"
       },
       {
-        "Path": "WebAPI\\WebAPI.csproj",
-        "Action": "Start"
-      },
-      {
         "Path": "Worker\\Worker.csproj",
         "Action": "Start"
       }

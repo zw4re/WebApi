@@ -17,7 +17,7 @@
   <ItemGroup>
 	  <ProjectReference Include="..\DatabaseService\DatabaseService.csproj" />
 	  <ProjectReference Include="..\Worker\Worker.csproj" />
-	  <ProjectReference Include="..\Models\Entites.csproj" />
+	  <ProjectReference Include="..\Models\Entities.csproj" />
   </ItemGroup>
 
 </Project>
