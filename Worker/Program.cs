@@ -23,10 +23,10 @@ builder.Services.AddHangfireServer();
 
 // Servisler
 builder.Services.AddHttpClient(); // DatabaseService'e Http üzerinden istek atmak için
-//builder.Services.AddScoped<KapParseService>();
-//builder.Services.AddScoped<KapJob>();
-//builder.Services.AddScoped<TcmbService>();
-//builder.Services.AddScoped<TcmbJob>();
+builder.Services.AddScoped<KapParseService>();
+builder.Services.AddScoped<KapJob>();
+builder.Services.AddScoped<TcmbService>();
+builder.Services.AddScoped<TcmbJob>();
 builder.Services.AddSingleton<RecurringJobs>();
 // Hosted service (Worker arkada çalışacak)
 builder.Services.AddHostedService<Workers>();

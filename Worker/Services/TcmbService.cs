@@ -30,7 +30,9 @@ namespace Worker.Services
                 _httpClient.DefaultRequestHeaders.Add("key", _apiKey);
                 string userAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36";
                 _httpClient.DefaultRequestHeaders.UserAgent.ParseAdd(userAgent);
-                _httpClient.DefaultRequestHeaders.Add("Accept", "/");
+                
+                _httpClient.DefaultRequestHeaders.Add("Accept", "application/json");
+                //_httpClient.DefaultRequestHeaders.Add("Accept", "/");
                 //_httpClient.DefaultRequestHeaders.Add("Accept-Encoding", "gzip, deflate, br");
                 _httpClient.DefaultRequestHeaders.Add("Connection", "keep-alive");
 
