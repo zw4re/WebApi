@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{69C79C25-F84F-479E-3E79-EC68C71F7F70}|Worker\\Worker.csproj|c:\\users\\eren\\desktop\\kapparser\\kapparser\\kapparsersolution\\worker\\jobs\\recurringjobs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69C79C25-F84F-479E-3E79-EC68C71F7F70}|Worker\\Worker.csproj|solutionrelative:worker\\jobs\\recurringjobs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{69C79C25-F84F-479E-3E79-EC68C71F7F70}|Worker\\Worker.csproj|c:\\users\\eren\\desktop\\kapparser\\kapparser\\kapparsersolution\\worker\\jobs\\tcmbjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{69C79C25-F84F-479E-3E79-EC68C71F7F70}|Worker\\Worker.csproj|solutionrelative:worker\\jobs\\tcmbjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -18,28 +22,41 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TcmbJob.cs",
-              "DocumentMoniker": "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\Worker\\Jobs\\TcmbJob.cs",
-              "RelativeDocumentMoniker": "Worker\\Jobs\\TcmbJob.cs",
-              "ToolTip": "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\Worker\\Jobs\\TcmbJob.cs",
-              "RelativeToolTip": "Worker\\Jobs\\TcmbJob.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T11:08:08.331Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RecurringJobs.cs",
+              "DocumentMoniker": "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\Worker\\Jobs\\RecurringJobs.cs",
+              "RelativeDocumentMoniker": "Worker\\Jobs\\RecurringJobs.cs",
+              "ToolTip": "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\Worker\\Jobs\\RecurringJobs.cs",
+              "RelativeToolTip": "Worker\\Jobs\\RecurringJobs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T11:20:02.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "TcmbJob.cs",
+              "DocumentMoniker": "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\Worker\\Jobs\\TcmbJob.cs",
+              "RelativeDocumentMoniker": "Worker\\Jobs\\TcmbJob.cs",
+              "ToolTip": "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\Worker\\Jobs\\TcmbJob.cs",
+              "RelativeToolTip": "Worker\\Jobs\\TcmbJob.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T11:08:08.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "TcmbService.cs",
               "DocumentMoniker": "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\Worker\\Services\\TcmbService.cs",
               "RelativeDocumentMoniker": "Worker\\Services\\TcmbService.cs",
@@ -47,8 +64,7 @@
               "RelativeToolTip": "Worker\\Services\\TcmbService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAG8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T11:07:06.807Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-29T11:07:06.807Z"
             }
           ]
         },

@@ -14,6 +14,6 @@ public class RecurringJobs
     {
         
         RecurringJob.AddOrUpdate<KapJob>("kap-job", x => x.Run(), Cron.Daily);
-        RecurringJob.AddOrUpdate<TcmbJob>("tcmb-job", x => x.ExecuteAsync(), Cron.Daily);
+        RecurringJob.AddOrUpdate<TcmbJob>("tcmb-job", x => x.Run(), Cron.Daily);
     }
 }
