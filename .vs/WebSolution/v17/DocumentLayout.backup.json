@@ -42,8 +42,7 @@
               "RelativeToolTip": "Worker\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T11:30:07.408Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-29T11:30:07.408Z"
             },
             {
               "$type": "Document",
@@ -68,8 +67,7 @@
               "RelativeToolTip": "Worker\\Jobs\\RecurringJobs.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T11:20:02.181Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-29T11:20:02.181Z"
             },
             {
               "$type": "Document",
@@ -81,8 +79,7 @@
               "RelativeToolTip": "Worker\\Jobs\\TcmbJob.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T11:08:08.331Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-29T11:08:08.331Z"
             }
           ]
         },
