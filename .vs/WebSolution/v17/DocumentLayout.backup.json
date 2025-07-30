@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{69C79C25-F84F-479E-3E79-EC68C71F7F70}|Worker\\Worker.csproj|c:\\users\\eren\\desktop\\kapparser\\kapparser\\kapparsersolution\\worker\\services\\tcmbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69C79C25-F84F-479E-3E79-EC68C71F7F70}|Worker\\Worker.csproj|solutionrelative:worker\\services\\tcmbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DA6661AE-3A8C-800B-75A3-15DF38DAC272}|DatabaseService\\DatabaseService.csproj|c:\\users\\eren\\desktop\\kapparser\\kapparser\\kapparsersolution\\databaseservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA6661AE-3A8C-800B-75A3-15DF38DAC272}|DatabaseService\\DatabaseService.csproj|solutionrelative:databaseservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{69C79C25-F84F-479E-3E79-EC68C71F7F70}|Worker\\Worker.csproj|c:\\users\\eren\\desktop\\kapparser\\kapparser\\kapparsersolution\\worker\\jobs\\tcmbjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69C79C25-F84F-479E-3E79-EC68C71F7F70}|Worker\\Worker.csproj|solutionrelative:worker\\jobs\\tcmbjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{262C6A48-AE34-D77E-44A9-AF0CD30983F0}|Models\\Entities.csproj|c:\\users\\eren\\desktop\\kapparser\\kapparser\\kapparsersolution\\models\\presentation\\companyjsonmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{262C6A48-AE34-D77E-44A9-AF0CD30983F0}|Models\\Entities.csproj|solutionrelative:models\\presentation\\companyjsonmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1696011-9467-40F3-A19A-EA4893662254}|WebAPI\\WebAPI.csproj|c:\\users\\eren\\desktop\\kapparser\\kapparser\\kapparsersolution\\webapi\\helpers\\allowallusersauthorizationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1696011-9467-40F3-A19A-EA4893662254}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\helpers\\allowallusersauthorizationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1696011-9467-40F3-A19A-EA4893662254}|WebAPI\\WebAPI.csproj|c:\\users\\eren\\desktop\\kapparser\\kapparser\\kapparsersolution\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1696011-9467-40F3-A19A-EA4893662254}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{69C79C25-F84F-479E-3E79-EC68C71F7F70}|Worker\\Worker.csproj|c:\\users\\eren\\desktop\\kapparser\\kapparser\\kapparsersolution\\worker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,6 +25,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{69C79C25-F84F-479E-3E79-EC68C71F7F70}|Worker\\Worker.csproj|c:\\users\\eren\\desktop\\kapparser\\kapparser\\kapparsersolution\\worker\\jobs\\recurringjobs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{69C79C25-F84F-479E-3E79-EC68C71F7F70}|Worker\\Worker.csproj|solutionrelative:worker\\jobs\\recurringjobs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69C79C25-F84F-479E-3E79-EC68C71F7F70}|Worker\\Worker.csproj|c:\\users\\eren\\desktop\\kapparser\\kapparser\\kapparsersolution\\worker\\services\\tcmbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69C79C25-F84F-479E-3E79-EC68C71F7F70}|Worker\\Worker.csproj|solutionrelative:worker\\services\\tcmbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69C79C25-F84F-479E-3E79-EC68C71F7F70}|Worker\\Worker.csproj|c:\\users\\eren\\desktop\\kapparser\\kapparser\\kapparsersolution\\worker\\jobs\\tcmbjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69C79C25-F84F-479E-3E79-EC68C71F7F70}|Worker\\Worker.csproj|solutionrelative:worker\\jobs\\tcmbjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,44 +50,98 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\DatabaseService\\Program.cs",
+              "RelativeDocumentMoniker": "DatabaseService\\Program.cs",
+              "ToolTip": "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\DatabaseService\\Program.cs",
+              "RelativeToolTip": "DatabaseService\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T13:19:05.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CompanyJsonModel.cs",
+              "DocumentMoniker": "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\Models\\Presentation\\CompanyJsonModel.cs",
+              "RelativeDocumentMoniker": "Models\\Presentation\\CompanyJsonModel.cs",
+              "ToolTip": "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\Models\\Presentation\\CompanyJsonModel.cs",
+              "RelativeToolTip": "Models\\Presentation\\CompanyJsonModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T09:25:07.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "AllowAllUsersAuthorizationFilter.cs",
+              "DocumentMoniker": "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\WebAPI\\Helpers\\AllowAllUsersAuthorizationFilter.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Helpers\\AllowAllUsersAuthorizationFilter.cs",
+              "ToolTip": "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\WebAPI\\Helpers\\AllowAllUsersAuthorizationFilter.cs*",
+              "RelativeToolTip": "WebAPI\\Helpers\\AllowAllUsersAuthorizationFilter.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T11:05:48.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\Worker\\Program.cs",
               "RelativeDocumentMoniker": "Worker\\Program.cs",
               "ToolTip": "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\Worker\\Program.cs",
               "RelativeToolTip": "Worker\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAArAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAUAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T11:30:07.408Z"
+              "WhenOpened": "2025-07-29T11:30:07.408Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\WebAPI\\Program.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\WebAPI\\Program.cs",
+              "RelativeToolTip": "WebAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T09:59:52.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RecurringJobs.cs",
+              "DocumentMoniker": "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\Worker\\Jobs\\RecurringJobs.cs",
+              "RelativeDocumentMoniker": "Worker\\Jobs\\RecurringJobs.cs",
+              "ToolTip": "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\Worker\\Jobs\\RecurringJobs.cs",
+              "RelativeToolTip": "Worker\\Jobs\\RecurringJobs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T11:20:02.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "TcmbService.cs",
               "DocumentMoniker": "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\Worker\\Services\\TcmbService.cs",
               "RelativeDocumentMoniker": "Worker\\Services\\TcmbService.cs",
               "ToolTip": "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\Worker\\Services\\TcmbService.cs",
               "RelativeToolTip": "Worker\\Services\\TcmbService.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwDYAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwCEAAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-29T11:07:06.807Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RecurringJobs.cs",
-              "DocumentMoniker": "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\Worker\\Jobs\\RecurringJobs.cs",
-              "RelativeDocumentMoniker": "Worker\\Jobs\\RecurringJobs.cs",
-              "ToolTip": "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\Worker\\Jobs\\RecurringJobs.cs",
-              "RelativeToolTip": "Worker\\Jobs\\RecurringJobs.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T11:20:02.181Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "TcmbJob.cs",
               "DocumentMoniker": "C:\\Users\\Eren\\Desktop\\KapParser\\KapParser\\KapParserSolution\\Worker\\Jobs\\TcmbJob.cs",
               "RelativeDocumentMoniker": "Worker\\Jobs\\TcmbJob.cs",

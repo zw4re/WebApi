@@ -2,12 +2,12 @@
 
 namespace KapParser.API.Helpers
 { 
-public class AllowAllUsersAuthorizationFilter : IDashboardAuthorizationFilter
-{
-    public bool Authorize(DashboardContext context)
+    public class AllowAllUsersAuthorizationFilter : IDashboardAuthorizationFilter
     {
-        return true; // Geliştirme ortamı için uygundur
+        public bool Authorize(DashboardContext context)
+        {
+            return true; // Geliştirme ortamı için uygundur
+        }
     }
-}
 
 }
